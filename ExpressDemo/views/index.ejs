@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Express Demo</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    <body>
+        <h1>Page loaded using express</h1>
+        <form id="form">
+            <span>Enter number 1: </span><input type="number" id="num1"><br><br>
+            <span>Enter number 2: </span><input type="number" id="num2"><br><br>
+            <input type="button" value="Compute" onclick="server()" class="btn btn-primary">
+            <input type="button" value="Reset" onclick="rem()" class="btn btn-danger">
+            <span id="ans"></span>
+        </form>
+    </body>
+    <script src="/public/js/demo.js"></script>
+
+</html>

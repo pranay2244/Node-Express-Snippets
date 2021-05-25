@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Sample page</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            color: red;
+            border: 1px solid black;
+            padding: 50px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Opening html page from NODE JS</h1>
+    <p>So we can open a html page by reading it using fs module with the encoding type utf-8 in the server code. After we read the html page we can just put it in the write method of http response, so that this html page will be written
+    </p>
+    <span>Enter number 1</span><input type="number" id="num1"><br><br>
+    <span>Enter number 2</span><input type="number" id="num2"><br><br>
+    <input type="button" onClick="sum()" value="Calculate sum">
+    <span id="ans"></span>
+</body>
+<script>
+    async function sum() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var ans = await fetch(`http://localhost:1112/sum?num1=${num1}&num2=${num2}`);
+        var ans = await ans.json();
+        document.getElementById("ans").innerHTML = '<br>Ans = ' + ans.toString();
+    }
+</script>
+
+</html>

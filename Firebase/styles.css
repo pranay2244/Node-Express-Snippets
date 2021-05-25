@@ -1,0 +1,31 @@
+body {
+  background: lightgrey;
+}
+.container2 {
+  width: 400px;
+  background-color: yellow;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  padding: 50px;
+  border-bottom: 2px solid grey;
+  justify-content: center;
+}
+.input {
+  box-sizing: border-box;
+  background: inherit;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  outline: none;
+  color: darkviolet;
+  font-weight: bold;
+  font-size: inherit;
+}
+#course {
+  margin-left: 40%;
+}
+.bold {
+  font-weight: bold;
+  text-align: center;
+}
