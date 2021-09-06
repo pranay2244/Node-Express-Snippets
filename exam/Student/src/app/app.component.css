@@ -1,0 +1,29 @@
+* {
+    font-size: large;
+}
+
+.container {
+    width: fit-content;
+    background-color: yellow;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.input {
+    box-sizing: border-box;
+    background: inherit;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    outline: none;
+    color: red;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+button {
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}

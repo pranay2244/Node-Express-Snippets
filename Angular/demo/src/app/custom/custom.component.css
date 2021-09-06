@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+th {
+    /* border: 2px solid red; */
+    border-collapse: collapse;
+    color: aliceblue;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+table {
+    margin: 50px auto;
+    padding: 100px;
+    font-family: 'Monteserrat', sans-serif;
+    /* border: 5px solid goldenrod; */
+    border-collapse: collapse;
+    background-color: darkviolet;
+}
+
+td {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+}
+
+.container {
+    border: 5px solid gold;
+    margin: 50px 30%;
+    background-color: gold
+}

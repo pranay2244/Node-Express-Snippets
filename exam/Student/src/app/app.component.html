@@ -1,0 +1,12 @@
+<div class="container">
+    Name: <input type="text" [(ngModel)]="name"><br><br> Email: <input type="email" [(ngModel)]="email"><br><br> Phone: <input type="number" [(ngModel)]="phone"><br><br>
+    <button (click)="insert()">Insert</button>
+    <button (click)="read()">Read</button>
+    <button (click)="update()">Update</button>
+    <button (click)="delete()">Delete</button>
+</div>
+<div>
+    <p>{{name1}}</p>
+    <p>{{email1}}</p>
+    <p>{{phone1}}</p>
+</div>

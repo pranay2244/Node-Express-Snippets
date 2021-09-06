@@ -1,0 +1,18 @@
+<div>
+    <form #city="ngForm" (ngSubmit)="getData(city)">
+        <label for="city">City: </label>
+        <input type="text" name="city" id="city" ngModel>
+        <button type="submit">Get Weather</button>
+    </form>
+    <table>
+        <tr>
+            <td>
+                <!-- <canvas id="weather"></canvas> !-->
+				 <canvas baseChart 
+        [datasets]="date" 
+        [labels]="temp">
+    </canvas>
+            </td>
+        </tr>
+    </table>
+</div>

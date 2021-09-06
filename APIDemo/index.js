@@ -1,13 +1,12 @@
 const express = require('express');
 const users = require('./users');
 const fs = require('fs');
-
 const app = express();
 
 app.use(express.json());
 app.listen(1111, () => console.log("Server listening"));
 
-app.get('/api/users', (req, res) => {
+app.get('/api/users',(req, res) => {
     res.send(users);
 })
 
